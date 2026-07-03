@@ -38,9 +38,9 @@ func _on_mounment_texture_pressed() -> void:
 		is_visited = true
 		#modulate = Color(0.8, 0.8, 0.8)
 		if (mon_type == "food"):
-				$"../estadp"._energia += 10
+				$"../estado"._energia += 10
 		else:
-				$"../estadp"._energia -= 10
+				$"../estado"._energia -= 10
 	pass # Replace with function body.
 
 #func get_distance(a: Vector2, b: Vector2) -> void:

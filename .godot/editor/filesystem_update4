@@ -1,4 +1,8 @@
 res://scenes/node_2d.tscn
-res://scripts/pin.gd
-res://scripts/button.gd
 res://scripts/mapa.gd
+res://scripts/button.gd
+res://label.gd
+res://scripts/pin.gd
+res://item_list.gd
+res://ui/ui.tscn
+res://ui/grid_container.gd
