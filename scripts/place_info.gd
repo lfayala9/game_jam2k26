@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 func show_info(id: int):
 	match id:
 		0:
-			place_desc.text = "has viajado 2km"
+			place_desc.text = "PITOS"
 		1:
 			place_desc.text = "Informacion del lugar: \blublublbublublublbulublublubublublublublub"
 	print(id)
