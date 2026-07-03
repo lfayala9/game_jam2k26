@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d3nyp8tl2rrhd"]
+
+[ext_resource type="Texture2D" uid="uid://dto8gidj34buc" path="res://assets/4282478-200.png" id="1_nb4k0"]
+
+[node name="UI" type="Control" unique_id=1301852380]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -830.0
+offset_bottom = -428.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1318439126]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.49, 0.49)
+columns = 3
+
+[node name="Button" type="Button" parent="GridContainer" unique_id=1751443782]
+layout_mode = 2
+icon = ExtResource("1_nb4k0")
+
+[node name="Button2" type="Button" parent="GridContainer" unique_id=1013157031]
+layout_mode = 2
+text = "2"
+icon = ExtResource("1_nb4k0")
+
+[node name="Button3" type="Button" parent="GridContainer" unique_id=1544268426]
+layout_mode = 2
+text = "3"
+icon = ExtResource("1_nb4k0")
+
+[node name="Button4" type="Button" parent="GridContainer" unique_id=1875825297]
+layout_mode = 2
+text = "4"
+icon = ExtResource("1_nb4k0")
+
+[node name="Button5" type="Button" parent="GridContainer" unique_id=908008047]
+layout_mode = 2
+text = "5"
+icon = ExtResource("1_nb4k0")
+
+[node name="Button6" type="Button" parent="GridContainer" unique_id=317841465]
+layout_mode = 2
+text = "6"
+icon = ExtResource("1_nb4k0")

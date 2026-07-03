@@ -9,9 +9,9 @@ extends Node2D
 
 @onready var monumentos = {
 	0: $"../Control2" ,
-	1: $"../Control"
+	1: $"../Control",
+	2: $"../Control3"
 }
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

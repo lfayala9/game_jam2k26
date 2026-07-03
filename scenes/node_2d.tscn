@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://djcar7ob14o60"]
 
-[ext_resource type="Texture2D" uid="uid://b1ol1aourwtcd" path="res://assets/0ab41a4e30c6d31da25a97bc92f5ec61.jpg" id="1_6e84v"]
+[ext_resource type="Texture2D" uid="uid://p54m5xjy51lw" path="res://assets/mapa-04.png" id="1_3m5ht"]
 [ext_resource type="PackedScene" uid="uid://dvry8p5ncqu0a" path="res://scenes/button.tscn" id="2_4dvvg"]
 [ext_resource type="Script" uid="uid://rj3q08q62hx7" path="res://scripts/mapa.gd" id="2_hh0fu"]
 [ext_resource type="Texture2D" uid="uid://b0d2ctpgo2acs" path="res://assets/madrid_puerta_del_sol_02_puerta_del_sol_jpg_500_282_cover_70.jpg" id="3_rnjyy"]
@@ -8,20 +8,22 @@
 [ext_resource type="Texture2D" uid="uid://cxaxvat1q6pui" path="res://assets/EstaciondeAtochaBarea_1404815129.73.jpg" id="4_4vge2"]
 [ext_resource type="Texture2D" uid="uid://cludffoh5mt6h" path="res://assets/1540647000323.jpg" id="5_fws66"]
 [ext_resource type="PackedScene" uid="uid://drw5jiv42yj2x" path="res://scenes/pin.tscn" id="6_j7wrs"]
+[ext_resource type="PackedScene" uid="uid://d3nyp8tl2rrhd" path="res://ui/ui.tscn" id="9_3m5ht"]
 
 [node name="Node2D" type="Node2D" unique_id=2023171584]
 
-[node name="mapa" type="Sprite2D" parent="." unique_id=1413428456]
-position = Vector2(575.99994, 321)
-scale = Vector2(0.55957025, 0.42741936)
-texture = ExtResource("1_6e84v")
+[node name="mapa" type="Sprite2D" parent="." unique_id=1413428456 node_paths=PackedStringArray("initial")]
+position = Vector2(651, 340.00003)
+scale = Vector2(1.02, 0.784)
+texture = ExtResource("1_3m5ht")
 script = ExtResource("2_hh0fu")
+initial = NodePath("Control2")
 
 [node name="Control" parent="mapa" unique_id=1785119868 node_paths=PackedStringArray("pin", "states") instance=ExtResource("2_4dvvg")]
-offset_left = -66.1221
-offset_top = 123.99997
-offset_right = -1971.155
-offset_bottom = -1282.1132
+offset_left = 37.25492
+offset_top = 5.1019897
+offset_right = 37.25492
+offset_bottom = 5.1019897
 image = ExtResource("3_rnjyy")
 mon_name = "Oso"
 place_id = 1
@@ -30,19 +32,19 @@ states = NodePath("../estadp")
 mon_type = "food"
 
 [node name="Control2" parent="mapa" unique_id=491161958 node_paths=PackedStringArray("pin") instance=ExtResource("2_4dvvg")]
-offset_left = 495.02283
-offset_top = 526.41504
-offset_right = 495.02283
-offset_bottom = 526.41504
+offset_left = -411.76483
+offset_top = -29.336792
+offset_right = -411.76483
+offset_bottom = -29.336792
 image = ExtResource("4_4vge2")
 mon_name = "Atocha"
 pin = NodePath("../pin")
 
 [node name="Control3" parent="mapa" unique_id=1481585261 node_paths=PackedStringArray("pin") instance=ExtResource("2_4dvvg")]
-offset_left = 755.9374
-offset_top = 70.18866
-offset_right = 755.9374
-offset_bottom = 70.18866
+offset_left = -395.09805
+offset_top = -285.71436
+offset_right = -395.09805
+offset_bottom = -285.71436
 image = ExtResource("5_fws66")
 mon_name = "Atocha"
 place_id = 2
@@ -58,3 +60,10 @@ _energia = 100
 [node name="pin" parent="mapa" unique_id=1120978397 instance=ExtResource("6_j7wrs")]
 position = Vector2(477.15198, -634.0376)
 scale = Vector2(0.812, 1)
+
+[node name="UI" parent="." unique_id=1301852380 instance=ExtResource("9_3m5ht")]
+offset_left = 5.0
+offset_top = 696.0
+offset_right = 5.0
+offset_bottom = 696.00006
+scale = Vector2(0.76, 1)
