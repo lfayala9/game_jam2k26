@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cw1uyqpleros3"]
+
+[ext_resource type="Script" uid="uid://leb41jr0prjl" path="res://scripts/place_info.gd" id="1_qdqd2"]
+
+[node name="place_info" type="Node2D" unique_id=360454292]
+script = ExtResource("1_qdqd2")
+
+[node name="Control" type="Control" parent="." unique_id=1388659827]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control" unique_id=969778945]
+layout_mode = 0
+offset_top = 339.99997
+offset_right = 274.0
+offset_bottom = 561.0
+scale = Vector2(1.4452555, 1.3634756)
+theme_override_font_sizes/normal_font_size = 32

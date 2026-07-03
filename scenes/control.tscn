@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bu06mlxofmhlm"]
+
+[ext_resource type="Script" uid="uid://bt342c8tel8eo" path="res://scripts/control.gd" id="1_5p55f"]
+
+[node name="estadp" type="Control" unique_id=1803787761]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.099210605, 0.121963516)
+script = ExtResource("1_5p55f")
+
+[node name="BARRA" type="Label" parent="." unique_id=2101394763]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(54.098, 30.926)

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dvry8p5ncqu0a"]
+
+[ext_resource type="Script" uid="uid://8bft1vye3uv8" path="res://scripts/button.gd" id="1_mi6dp"]
+
+[sub_resource type="GDScript" id="GDScript_mi6dp"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="monument_button" type="Control" unique_id=1785119868]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+focus_mode = 2
+script = ExtResource("1_mi6dp")
+
+[node name="mounment_texture" type="TextureButton" parent="." unique_id=1922578436]
+layout_mode = 0
+offset_right = 103.0
+offset_bottom = 79.0
+script = SubResource("GDScript_mi6dp")
+
+[connection signal="mouse_entered" from="mounment_texture" to="." method="_on_mounment_texture_mouse_entered"]
+[connection signal="mouse_exited" from="mounment_texture" to="." method="_on_mounment_texture_mouse_exited"]
+[connection signal="pressed" from="mounment_texture" to="." method="_on_mounment_texture_pressed"]
