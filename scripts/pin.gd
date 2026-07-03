@@ -6,10 +6,12 @@ extends Node2D
 #@export var fourth_pos: Control
 #@export var fifth_pos: Control
 
+
 @onready var monumentos = {
-	0: $"../Control" ,
-	1: $"../Control2"
+	0: $"../Control2" ,
+	1: $"../Control"
 }
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

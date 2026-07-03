@@ -2,9 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://b1ol1aourwtcd" path="res://assets/0ab41a4e30c6d31da25a97bc92f5ec61.jpg" id="1_6e84v"]
 [ext_resource type="PackedScene" uid="uid://dvry8p5ncqu0a" path="res://scenes/button.tscn" id="2_4dvvg"]
+[ext_resource type="Script" uid="uid://rj3q08q62hx7" path="res://scripts/mapa.gd" id="2_hh0fu"]
 [ext_resource type="Texture2D" uid="uid://b0d2ctpgo2acs" path="res://assets/madrid_puerta_del_sol_02_puerta_del_sol_jpg_500_282_cover_70.jpg" id="3_rnjyy"]
 [ext_resource type="PackedScene" uid="uid://bu06mlxofmhlm" path="res://scenes/control.tscn" id="4_04qyp"]
 [ext_resource type="Texture2D" uid="uid://cxaxvat1q6pui" path="res://assets/EstaciondeAtochaBarea_1404815129.73.jpg" id="4_4vge2"]
+[ext_resource type="Texture2D" uid="uid://cludffoh5mt6h" path="res://assets/1540647000323.jpg" id="5_fws66"]
 [ext_resource type="PackedScene" uid="uid://drw5jiv42yj2x" path="res://scenes/pin.tscn" id="6_j7wrs"]
 
 [node name="Node2D" type="Node2D" unique_id=2023171584]
@@ -13,6 +15,7 @@
 position = Vector2(575.99994, 321)
 scale = Vector2(0.55957025, 0.42741936)
 texture = ExtResource("1_6e84v")
+script = ExtResource("2_hh0fu")
 
 [node name="Control" parent="mapa" unique_id=1785119868 node_paths=PackedStringArray("pin", "states") instance=ExtResource("2_4dvvg")]
 offset_left = -66.1221
@@ -21,6 +24,7 @@ offset_right = -1971.155
 offset_bottom = -1282.1132
 image = ExtResource("3_rnjyy")
 mon_name = "Oso"
+place_id = 1
 pin = NodePath("../pin")
 states = NodePath("../estadp")
 mon_type = "food"
@@ -32,7 +36,16 @@ offset_right = 495.02283
 offset_bottom = 526.41504
 image = ExtResource("4_4vge2")
 mon_name = "Atocha"
-place_id = 1
+pin = NodePath("../pin")
+
+[node name="Control3" parent="mapa" unique_id=1481585261 node_paths=PackedStringArray("pin") instance=ExtResource("2_4dvvg")]
+offset_left = 755.9374
+offset_top = 70.18866
+offset_right = 755.9374
+offset_bottom = 70.18866
+image = ExtResource("5_fws66")
+mon_name = "Atocha"
+place_id = 2
 pin = NodePath("../pin")
 
 [node name="estadp" parent="mapa" unique_id=1803787761 instance=ExtResource("4_04qyp")]

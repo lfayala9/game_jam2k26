@@ -1,2 +1,4 @@
 res://scenes/node_2d.tscn
-res://scripts/place_info.gd
+res://scripts/pin.gd
+res://scripts/button.gd
+res://scripts/mapa.gd

@@ -10,9 +10,9 @@ extends Control
 const place_info = preload("res://ui/place_info.tscn")
 var actual_info
 var	is_visited: bool = false
-
 var distance0to1: int = 3
 var distance: int
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$mounment_texture.texture_normal = image
@@ -33,6 +33,7 @@ func _on_mounment_texture_pressed() -> void:
 	get_tree().current_scene.add_child(actual_info)
 	actual_info.show_info(place_id)
 	if is_visited == false:
+		$"..".get_place(self)
 		pin.position = _pos + Vector2(0, -30)
 		is_visited = true
 		#modulate = Color(0.8, 0.8, 0.8)
@@ -41,6 +42,10 @@ func _on_mounment_texture_pressed() -> void:
 		else:
 				$"../estadp"._energia -= 10
 	pass # Replace with function body.
+
+#func get_distance(a: Vector2, b: Vector2) -> void:
+	#
+	#pass
 
 func _on_mounment_texture_mouse_exited() -> void:
 	if is_visited == false:
